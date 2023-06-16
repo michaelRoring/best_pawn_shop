@@ -3,9 +3,9 @@ import Card from "../components/Card";
 export default function Home() {
   return (
     <>
-      <div className="px-16 mx-16">
+      <div className="px-16 mx-16 relative">
         {/* shop header */}
-        <div className="border-solid border-2 px-10 rounded-3xl h-72 mt-20 pt-12 flex shadow-xl">
+        <div className="border-solid border-2 px-10 rounded-3xl h-72 mt-8 pt-12 flex shadow-xl bg-gradient-to-r from-slate-50 from-10% via-slate-100 via-40% to-purple-50 to-70%">
           <img
             className="w-30 h-36 rounded-full border-solid border-4 p-3 "
             src="https://static.vecteezy.com/system/resources/thumbnails/012/638/357/small/paw-print-silhouette-png.png"
@@ -23,29 +23,30 @@ export default function Home() {
               Verified Seller
             </span>
             <h1 className="ml-8 font-bold text-4xl mt-2">Best Pawn Shop</h1>
-            <h1 className="ml-8 text-xl">Subang Jaya</h1>
+            <hr className="ml-8 border border-2" />
+            <h1 className="ml-8 text-lg mt-2">Subang Jaya</h1>
             <div className="flex mt-5">
               <button
                 type="button"
-                class="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-32  mr-6 ml-8 mb-2 "
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-32  mr-3 ml-8 mb-2 "
               >
                 Follow
               </button>
               <button
                 type="button"
-                class="text-slate-700 border-solid border-2 bg-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-32  mr-6 mb-2 "
+                class="text-slate-700 border-solid border-2 bg-white hover:bg-purple-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 pb-7 h-10 w-32  mr-2 mb-2 "
               >
                 Chat
               </button>
               <img
                 src="https://www.pngall.com/wp-content/uploads/2/Share.png"
-                className="w-10 h-10"
+                className="w-10 h-10 "
               />
             </div>
           </div>
-          <div className="flex">
+          <div className="flex mt-32">
             {/* ratings */}
-            <div className="flex items-center pl-72 ml-36 ">
+            <div className="flex items-center pl-56 ml-36  ">
               <svg
                 aria-hidden="true"
                 className="w-5 h-5 text-yellow-400"
@@ -83,23 +84,26 @@ export default function Home() {
           {/* category */}
           <div className="border-2 border-solid px-12 py-6 rounded-2xl shadow-2xl">
             <h1 className="mb-4 text-2xl font-semibold">Store's category</h1>
-            <hr className="border-solid border-4 border-purple-100 rounded-3xl" />
-            <div className="flex flex-col space-y-2 text-xl mt-4">
-              <a href="#">Food</a>
+            <hr className="border-solid border-4 border-slate-200 rounded-3xl" />
+            <div className="flex flex-col space-y-2 text-xl mt-4 px-1">
+              <a href="#" className="hover:bg-purple-100 hover:rounded-md">
+                Food
+              </a>
 
-              <a href="#">Toys</a>
+              <a href="#" className="hover:bg-purple-100 hover:rounded-md ">
+                Toys
+              </a>
 
-              <a href="#">Suplement</a>
+              <a href="#" className="hover:bg-purple-100 hover:rounded-md">
+                Suplement
+              </a>
             </div>
           </div>
           {/* end ofcategory */}
           {/* cards */}
-          <div className="ml-8">
+          <div className="ml-8 w-full">
             <div className="flex">
-              <h1 className="mb-4 text-4xl font-bold ">All Products</h1>
-              <h1 className="mb-4 text-2xl ml-96 pl-72 font-bold ">
-                All Products
-              </h1>
+              <h1 className="mb-4 text-4xl font-bold">All Products</h1>
             </div>
             <div className="grid grid-cols-4 mx-auto gap-5">
               {/* cards */}
@@ -112,13 +116,19 @@ export default function Home() {
               <Card />
               <Card />
             </div>
-            <div className="border-2 border-solid mt-8 rounded-xl shadow-xl px-12 py-4">
+            <div className="border-2 border-solid mt-8 rounded-xl shadow-xl px-12 py-4 pb-24 bg-gradient-to-b from-slate-50 from-20% via-slate-50 via-50% to-slate-50 to-85%">
               <div className="flex mb-3">
                 <img
                   src="https://static.thenounproject.com/png/502043-200.png"
-                  className="w-10 h-10"
+                  className="w-10 h-10 pr-0.5"
                 />
                 <h1 className="font-bold mt-2 ml-4">Best Pawn Shop</h1>
+                <a
+                  href="#"
+                  className="mt-2 pl-96 ml-80 text-purple-500 hover:text-purple-700"
+                >
+                  Request changes
+                </a>
               </div>
               <div className="flex mb-3">
                 <img
@@ -129,11 +139,11 @@ export default function Home() {
               </div>
               <div className="flex mb-3">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/010/829/986/small/phone-icon-in-trendy-flat-style-free-png.png"
+                  src="https://www.freepnglogos.com/uploads/smartphone-png/mobile-phone-smartphone-vector-graphic-24.png"
                   className="w-10 h-9"
                 />
                 <h1 className=" mt-2 ml-4">**********85</h1>
-                <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 pt-2 rounded-xl border border-purple-400 ml-3">
+                <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 pt-2 rounded-lg border border-purple-400 ml-3">
                   Verified
                 </span>
               </div>
@@ -144,12 +154,12 @@ export default function Home() {
                 />
                 <div className="ml-4">
                   {/* location */}
-                  <nav class="flex">
-                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                  <nav class="flex pb-4">
+                    <ol class="inline-flex items-center space-x-1 ">
                       <li class="inline-flex items-center">
                         <a
                           href="#"
-                          class="inline-flex items-center text-purple-700 hover:text-blue-600"
+                          class="inline-flex items-center text-purple-400 hover:text-purple-600"
                         >
                           Subang Jaya
                         </a>
@@ -171,7 +181,7 @@ export default function Home() {
                           </svg>
                           <a
                             href="#"
-                            class="ml-1 text-purple-800 font-semibold hover:text-blue-600 md:ml-2 "
+                            class="ml-1 text-purple-500 font-semibold hover:text-purple-800 "
                           >
                             Selangor
                           </a>
@@ -194,7 +204,7 @@ export default function Home() {
                           </svg>
                           <a
                             href="#"
-                            class="ml-1 font-bold text-purple-900 md:ml-2"
+                            class="ml-1 font-bold text-purple-800 hover:text-purple-900 "
                           >
                             Malaysia
                           </a>

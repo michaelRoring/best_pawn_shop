@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <div>
+      <div className="fixed sticky top-0 z-50 bg-white border border-2 pb-4">
         {/* banner */}
         <div className="w-screen h-8 bg-purple-100 px-16 flex items-center justify-between">
           <div className="flex">
@@ -13,7 +13,7 @@ export default function Navbar() {
             <h1 className="ml-2">Download Ladaza App now</h1>
           </div>
           <div className="flex gap-16">
-            <a href="#">About Lazada</a>
+            <a href="#">About Ladaza</a>
             <a href="#">Start Selling</a>
             <a href="#">Ladaza Care</a>
           </div>
@@ -21,14 +21,14 @@ export default function Navbar() {
         {/* end of banner */}
 
         {/* start of navbar */}
-        <div className="px-16 mt-8 flex mx-16">
-          <h1 className="text-7xl">Ladaza</h1>
+        <div className="px-16 mt-1 flex mx-16">
+          <h1 className="text-7xl mt-4">Ladaza</h1>
 
           {/* search bar */}
           <form className="w-6/12 ml-36 mt-4">
             <label
               for="default-search"
-              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only "
             >
               Search
             </label>
@@ -36,7 +36,7 @@ export default function Navbar() {
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                  class="w-5 h-5 text-gray-500 "
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -59,7 +59,7 @@ export default function Navbar() {
               />
               <button
                 type="submit"
-                class="text-white absolute right-2.5 bottom-2.5 bg-amber-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+                class="text-white absolute right-2.5 bottom-2.5 bg-amber-500 hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
               >
                 Search
               </button>
@@ -269,13 +269,13 @@ export default function Navbar() {
           <div className="flex mt-5">
             <button
               type="button"
-              class="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-24  mr-6 ml-12 mb-2 "
+              class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-24  mr-6 ml-12 mb-2 "
             >
               Register
             </button>
             <button
               type="button"
-              class="text-slate-700 border-solid border-2 bg-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-24  mr-6  mb-2 "
+              class="text-slate-700 border-solid border-2 bg-white hover:bg-purple-200 hover:text-slate-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 h-10 w-24  mr-6 pb-7 mb-2 "
             >
               Login
             </button>
@@ -283,7 +283,7 @@ export default function Navbar() {
           {/* end of buttons */}
         </div>
         <div className="mx-96 px-28 flex gap-10 ">
-          <h1 className="font-bold">Popular this week:</h1>
+          <h1 className="font-semibold">Popular this week:</h1>
           <a href="#">umbrella</a>
           <a href="#">mouse</a>
           <a href="#">webcam</a>
